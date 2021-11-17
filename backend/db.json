@@ -1,0 +1,46 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "produto": "Xampu",
+      "codigo": 12345678,
+      "preco": 20.99
+    },
+    {
+      "id": 2,
+      "produto": "Escova de dente",
+      "codigo": 11111111,
+      "preco": 10.9
+    },
+    {
+      "id": 3,
+      "produto": "Esmalte",
+      "codigo": 22222222,
+      "preco": 4.99
+    },
+    {
+      "id": 4,
+      "produto": "Pente de cabelo",
+      "codigo": 33333333,
+      "preco": 7.5
+    },
+    {
+      "id": 5,
+      "produto": "Condicionador",
+      "codigo": 44444444,
+      "preco": 15.45
+    },
+    {
+      "codigo": "55555555",
+      "nome": "Agodao",
+      "preco": "10.50",
+      "id": 6
+    },
+    {
+      "codigo": "55555555",
+      "nome": "Algodao",
+      "preco": "10.89",
+      "id": 7
+    }
+  ]
+}

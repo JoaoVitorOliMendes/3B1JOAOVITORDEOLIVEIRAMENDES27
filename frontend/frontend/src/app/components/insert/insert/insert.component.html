@@ -1,0 +1,37 @@
+<app-nav [title]="'Inserir produtos'"></app-nav>
+<div class="container d-flex justify-content-center align-items-center flex-column h-100 pb-5">
+    <div class="h1 mb-5">
+        Inserir novos produtos
+    </div>
+    <div class="row justify-content-center w-50" [formGroup]="insertForm">
+
+        <mat-form-field appearance="fill" class="col-lg-9">
+            <mat-label>Digite o nome do produto</mat-label>
+            <input matInput placeholder="Joao Vitor da Silva" formControlName="produto" required>
+            <mat-error *ngIf="insertForm.get('produto')?.errors?.required">
+                Por favor digite seu nome
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="col-lg-9">
+            <mat-label>Digite o codigo</mat-label>
+            <input matInput placeholder="nome@exemplo.com" formControlName="codigo" required>
+            <mat-error *ngIf="insertForm.get('codigo')?.errors?.required">
+                Por favor digite seu email
+            </mat-error>
+        </mat-form-field>
+    
+        <mat-form-field appearance="fill" class="col-lg-9">
+            <mat-label>Digite o preco do produto</mat-label>
+            <input matInput placeholder="59.99" formControlName="preco" required>
+            <mat-error *ngIf="insertForm.get('preco')?.errors?.required">
+                Por favor digite sua senha
+            </mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button class="col-lg-3 m-3" (click)="register()">
+            Inserir
+        </button>
+
+    </div>
+</div>
